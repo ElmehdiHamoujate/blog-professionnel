@@ -25,9 +25,10 @@ RUN mkdir -p /var/www/html/db \
     && chmod -R 755 /var/www/html \
     && chmod -R 777 /var/www/html/db
 
-# Use Railway's dynamic PORT variable
-ENV PORT=80
-EXPOSE 80
+# Railway injects PORT at runtime — configure Apache to use it
+EXPOSE 8080
 
-# Start Apache in foreground
-CMD ["apache2-foreground"]
+# Startup script: replace Apache's port with Railway's $PORT then start
+CMD bash -c "sed -i \"s/Listen 80/Listen \${PORT:-8080}/g\" /etc/apache2/ports.conf && \
+    sed -i \"s/<VirtualHost \*:80>/<VirtualHost *:\${PORT:-8080}>/g\" /etc/apache2/sites-enabled/000-default.conf && \
+    apache2-foreground"
