@@ -35,7 +35,7 @@ define('PROFILE', [
     'photo'       => 'assets/images/profile.jpg',
     'skills'      => [
         'Cybersecurity'      => ['Network Security', 'Linux Security', 'Vulnerability Assessment', 'OWASP Top 10', 'Wireshark', 'Security Concepts'],
-        'Development'        => ['C#', 'Kotlin', 'Android (basics)', 'SQL', 'Web Development', 'VS Code'],
+        'Development'        => ['C#', 'Kotlin', 'JavaScript', 'Android (basics)', 'SQL', 'Web Development', 'VS Code'],
         'Systems & Networks' => ['Linux', 'TCP/IP Fundamentals', 'System Administration (basics)', 'Git'],
         'Management'         => ['Team Leadership', 'Operations Management', 'Strategic Analysis', 'Process Optimization', 'Client Relations'],
     ],
