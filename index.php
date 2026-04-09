@@ -369,7 +369,7 @@ $categories = ['cybersecurity' => '🔐', 'development' => '💻', 'career' => '
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container footer-inner">
-        <p>© <?= date('Y') ?> <?= htmlspecialchars($profile['name']) ?>. Built with PHP, SQLite &amp; Claude AI. Hosted on Railway.</p>
+        <p>© <?= date('Y') ?> <?= htmlspecialchars($profile['name']) ?>. All rights reserved.</p>
         <div class="footer-links">
             <a href="<?= htmlspecialchars($profile['github']) ?>" target="_blank" rel="noopener">GitHub</a>
             <a href="<?= htmlspecialchars($profile['linkedin']) ?>" target="_blank" rel="noopener">LinkedIn</a>
