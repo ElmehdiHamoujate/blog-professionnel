@@ -1,0 +1,19 @@
+# Environment secrets — NEVER commit
+.env
+
+# SQLite database
+db/*.sqlite
+db/*.sqlite-wal
+db/*.sqlite-shm
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
